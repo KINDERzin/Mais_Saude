@@ -1,0 +1,36 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Mais_Saude.MainPage"
+             Shell.NavBarIsVisible="False">
+
+    <Grid BackgroundColor="#f0f0f0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="40"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="70"/>
+        </Grid.RowDefinitions>
+
+        <Image Source="mais_saude.png"
+               Aspect="AspectFill"
+               Grid.Row="0"/>
+
+        <Label Text="Nome ou CPF:"
+               Grid.Row="1"
+               Margin="10, 5"/>
+
+        <Label Text="Senha:"
+               Grid.Row="3"
+               Margin="10, 5"/>
+
+       <Button Text="Entrar"
+               Grid.Row="5"
+               BackgroundColor="#a6ffad"
+               Margin="50, 10"/>
+    
+    </Grid>
+
+</ContentPage>
