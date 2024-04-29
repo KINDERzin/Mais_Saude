@@ -1,2 +1,2 @@
-# -Sa-de
+# +Saúde
 Projeto que eu e minha equipe desenvolvemos durante a maratona "Ideathon 2023" 
