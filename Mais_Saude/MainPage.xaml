@@ -1,36 +1,61 @@
-﻿<?xml version="1.0" encoding="utf-8" ?>
+<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="Mais_Saude.MainPage"
-             Shell.NavBarIsVisible="False">
+             Shell.NavBarIsVisible="False"
+             BackgroundColor="#ffffff">
+       <ScrollView>
+   <Frame BackgroundColor="#ffffff"
+          BorderColor="#2977af"
+          Margin="50, 20">
+       <Grid>
+              <Grid.RowDefinitions>
+                     <RowDefinition Height="250"/>
+                     <RowDefinition Height="50"/>
+                     <RowDefinition Height="AUTO"/>
+                     <RowDefinition Height="AUTO"/>
+                     <RowDefinition Height="AUTO"/>
+                     <RowDefinition Height="AUTO"/>
+                     <RowDefinition Height="80"/>
+              </Grid.RowDefinitions>
 
-    <Grid BackgroundColor="#f0f0f0">
-        <Grid.RowDefinitions>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="40"/>
-            <RowDefinition Height="*"/>
-            <RowDefinition Height="70"/>
-        </Grid.RowDefinitions>
+              <Image Source="mais_saude.png"   
+                     Grid.Row="0"/>
+              
+              <Label Text="LOGIN"
+                     FontSize="30"
+                     HorizontalTextAlignment="Center"
+                     TextColor="Black"
+                     Grid.Row="1"/>
 
-        <Image Source="mais_saude.png"
-               Aspect="AspectFill"
-               Grid.Row="0"/>
+              <Label Text="CPF:"
+                     TextColor="Black"   
+                     Grid.Row="2"
+                     Margin="10, 0"/>
 
-        <Label Text="Nome ou CPF:"
-               Grid.Row="1"
-               Margin="10, 5"/>
+              <Entry Placeholder="Digite seu CPF aqui"
+                     TextColor="Black"
+                     Grid.Row="3"/>
 
-        <Label Text="Senha:"
-               Grid.Row="3"
-               Margin="10, 5"/>
+              <Label Text="Senha:"
+                     TextColor="Black"  
+                     Grid.Row="4"
+                     Margin="10, 5"/>
 
-       <Button Text="Entrar"
-               Grid.Row="5"
-               BackgroundColor="#a6ffad"
-               Margin="50, 10"/>
-    
-    </Grid>
+              <Entry Placeholder="Digite senha aqui aqui"
+                     TextColor="Black"
+                     Keyboard="Text"
+                     Grid.Row="5"/>
 
+              <Button Text="Entrar"
+                      TextColor="Black"  
+                      BorderColor="#2977af"
+                      BorderWidth="1"
+                      Margin="50, 20, 50, 10"
+                      Grid.Row="6"
+                      VerticalOptions="End"/>
+
+       </Grid>
+   </Frame>
+   </ScrollView>
 </ContentPage>
